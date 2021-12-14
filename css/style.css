@@ -115,8 +115,15 @@ html {
 }
 
 .table-section__wrapper {
-    width: 202px;
+    width: 70%;
+    min-width: 201px;
+    max-width: 500px;
     margin: 0 auto;
+}
+
+.first-table {
+    position: relative;
+    padding-bottom: 6.4em;
 }
 
 .table-section__second-tittle {
@@ -130,12 +137,40 @@ html {
 table {
     width: 100%;
     font-family: Inter;
-    font-size: 1.6rem;
+    border-radius: 4px;
 }
 
-table, th, td {
-    border:1px solid black;
+td {
+    padding: 0.63em 0.75em;
     background-color:  var(--white);
     color: #B5B0AC;
 }
 
+.table-section__border {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1.6em;
+}
+
+.table-left {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.table-right {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #757575;
+}
+
+.table-section__date {
+    background-color: var(--soft-orange);
+    font-family: Inter;
+    font-size: 1.2rem;
+    padding: .67em;
+    width: 173px;
+    height: 31px;
+    border-radius: 8px;
+    margin: 0 auto;
+}

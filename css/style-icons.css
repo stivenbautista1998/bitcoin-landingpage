@@ -8,3 +8,37 @@
     left: 7px;
     color: var(--warm-black);
 }
+
+.icon-table {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 0.75em;
+}
+
+.trending-up {
+    background-image: url('../assets/icons/trending-up.svg');
+}
+
+.trending-down {
+    background-image: url('../assets/icons/trending-down.svg');
+}
+
+.table-icon {
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 12.41px;
+    background-image: url('../assets/icons/vector.svg');
+}
+
+.next {
+    right: -30px;
+    top: 115px;
+}
+
+.back {
+    transform: rotate(180deg);
+    left: -30px;
+    top: 115px;
+}
