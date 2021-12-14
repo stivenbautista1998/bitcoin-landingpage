@@ -42,3 +42,29 @@
     left: -30px;
     top: 115px;
 }
+
+.patata-icon {
+    display: inline-block;
+    position: absolute;
+    width: 41px;
+    height: 25px;
+    background-image: url("../assets/icons/icon-papa.svg");
+    left: calc(50% - 20px);
+    top: -12px;
+}
+
+.reloj-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.8em;
+    background-image: url("../assets/icons/clock.svg");
+}
+
+.eye-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.8em;
+    background-image: url("../assets/icons/eye.svg");
+}
