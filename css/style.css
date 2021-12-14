@@ -121,7 +121,7 @@ html {
     margin: 0 auto;
 }
 
-.first-table {
+.first-table, .second-table {
     position: relative;
     padding-bottom: 6.4em;
 }
@@ -132,6 +132,10 @@ html {
     text-align: initial;
     margin: 1.2rem;
     margin-top: 2.7em;
+}
+
+.blue-color {
+    color: var(--secondary-blue);
 }
 
 table {
@@ -173,4 +177,8 @@ td {
     height: 31px;
     border-radius: 8px;
     margin: 0 auto;
+}
+
+.soft-blue {
+    background-color: var(--soft-blue);
 }
