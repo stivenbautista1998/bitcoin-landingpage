@@ -87,7 +87,7 @@ html {
     background-color: var(--off-white);
 }
 
-.table-section {
+.center, .table-section  {
     width: 90%;
     margin: 0 auto;
     min-width: 288px;
@@ -102,14 +102,14 @@ html {
     margin-bottom: 4em;
 }
 
-.table-section__title {
+.section__title {
     font-size: 2.4rem;
     margin-bottom: 1em;
     line-height: 2.6rem;
     color: var(--warm-black);
 }
 
-.table-section__text {
+.section__text {
     font-size: 1.4rem;
     color: #757575;
 }
@@ -191,13 +191,6 @@ td {
     padding-bottom: 3em;
 }
 
-.center {
-    width: 90%;
-    margin: 0 auto;
-    min-width: 288px;
-    max-width: 900px;
-}
-
 .feature-section__tittle {
     font-size: 2.4rem;
     color: var(--white);
@@ -217,6 +210,7 @@ td {
     text-align: left;
     padding: 2em;
     margin-bottom: 1.6em;
+    min-height: 150px;
 }
 
 .feature-section__item__tittle {
@@ -251,4 +245,38 @@ td {
     position: absolute;
     left: calc(50% - 81.5px);
     top: 60px;
+}
+
+.plan-section {
+    padding-top: 6.4em;
+}
+
+.plan-section__list {
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 5em;
+    padding-bottom: 6em;
+}
+
+.plan-section__list__item {
+    width: 190px;
+    display: inline-block;
+    height: 247px;
+    background: var(--white);
+    box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
+    border-radius: 8px;
+    padding: 1.6em;
+    margin-bottom: .5em;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.plan-section__list__item:first-child {
+    left: -135px;
+}
+
+.plan-section__list__item:nth-child(3n) {
+    right: -135px;
 }
