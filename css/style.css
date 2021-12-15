@@ -230,3 +230,25 @@ td {
     color: #808080;
 }
 
+.image-section {
+    width: 100%;
+    background-color: var(--off-white);
+}
+
+.image-section__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image-section__img {
+    width: 100%;
+}
+
+.image-section__tittle {
+    font-size: 2.4rem;
+    color: var(--white);
+    position: absolute;
+    left: calc(50% - 81.5px);
+    top: 60px;
+}
