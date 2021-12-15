@@ -53,18 +53,25 @@
     top: -12px;
 }
 
-.reloj-icon {
+.icon-feature {
     display: inline-block;
     width: 24px;
     height: 24px;
     margin-bottom: 0.8em;
+}
+
+.reloj-icon {
     background-image: url("../assets/icons/clock.svg");
 }
 
 .eye-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-bottom: 0.8em;
     background-image: url("../assets/icons/eye.svg");
+}
+
+.bill-icon {
+    background-image: url("../assets/icons/dollar-sign.svg");
+}
+
+.check-circle {
+    background-image: url("../assets/icons/check-circle.svg");
 }
