@@ -75,3 +75,9 @@
 .check-circle {
     background-image: url("../assets/icons/check-circle.svg");
 }
+
+.arrow-right {
+    background-image: url("../assets/icons/arrow-right.svg");
+    margin: 0;
+    margin-left: 0.5em;
+}
