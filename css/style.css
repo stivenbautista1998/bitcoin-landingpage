@@ -346,3 +346,22 @@ td {
     justify-content: center;
     align-items: center;
 }
+
+.footer-section {
+    background-color: var(--bitcoin-orange);
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 2.9em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin: .5em 0;
+}
