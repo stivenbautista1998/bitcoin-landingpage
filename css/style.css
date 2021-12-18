@@ -249,6 +249,7 @@ td {
 
 .plan-section {
     padding-top: 6.4em;
+    position: relative;
 }
 
 .plan-section__list {
@@ -257,7 +258,7 @@ td {
     padding-bottom: 6em;
     display: flex;
     padding-top: 2em;
-    overflow-x: scroll;
+    overflow-x: scroll; /* Code to add the orizontal scroll */
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
@@ -366,4 +367,12 @@ td {
 
 .footer-list li {
     margin: .5em 0;
+}
+
+.hidden-container {
+    width: 100%;
+    padding: 1em;
+    background-color: transparent;
+    position: absolute;
+    bottom: 35%;
 }

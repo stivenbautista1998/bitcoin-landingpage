@@ -88,3 +88,21 @@
     height: 50px;
     background-image: url("../assets/imgs/batatabit-2020.svg");
 }
+
+.double-arrow {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 7;
+    background-image: url("../assets/icons/double-arrow.svg");
+}
+
+.right {
+    right: 10px;
+}
+
+.left {
+    left: 10px;
+    transform: rotate(180deg);
+}
