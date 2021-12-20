@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <header class="header-section">
@@ -138,10 +139,10 @@
             <h2 class="section__title center">Escoge el plan que mejor se ajuste a ti.</h2>
             <p class="section__text center">Cualquier plan te da acceso completo a nuestra plataforma.</p>
             <div class="hidden-container">
-                <span class="double-arrow right"></span>
-                <span class="double-arrow left"></span>
+                <span class="double-arrow right" id="arrow-right"></span>
+                <span class="double-arrow left" id="arrow-left"></span>
             </div>
-            <section class="plan-section__list">
+            <section class="plan-section__list" id="plans-container">
                 <article class="plan-section__list__item">
                     <h3 class="plan-section__list__tittle">Pago Mensual</h3>
                     <p class="plan-section__list__price"><span class="small-size">$</span> 25</p>
