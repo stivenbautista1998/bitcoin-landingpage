@@ -37,10 +37,6 @@ html {
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
-.header-section__nav {
-    /* border: 1px solid rgb(153, 24, 24); */
-}
-
 .header-wrapper {
     /* margin: 0 1.33em; */
     width: 90%;
@@ -94,6 +90,10 @@ html {
     max-width: 900px;
 }
 
+.table-section {
+    position: relative;
+}
+
 .table-section__img {
     background-image: url(../assets/imgs/bitcoin.svg);
     width: 195px;
@@ -116,14 +116,27 @@ html {
 
 .table-section__wrapper {
     width: 70%;
-    min-width: 201px;
-    max-width: 500px;
+    /* min-width: 201px;
+    max-width: 500px; */
     margin: 0 auto;
+    display: flex;
+    padding-bottom: 6.4em;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.wrapper-table-arrows {
+    position: absolute;
+    width: 70%;
 }
 
 .first-table, .second-table {
-    position: relative;
-    padding-bottom: 6.4em;
+    scroll-snap-align: center;
+}
+
+.first-table {
+    margin-right: 3em;
 }
 
 .table-section__second-tittle {
@@ -154,6 +167,7 @@ td {
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 1.6em;
+    width: 202px;
 }
 
 .table-left {

@@ -34,13 +34,15 @@
 
 .next {
     right: -30px;
-    top: 115px;
+}
+
+.next, .back {
+    top: 160px;
 }
 
 .back {
     transform: rotate(180deg);
     left: -30px;
-    top: 115px;
 }
 
 .patata-icon {
