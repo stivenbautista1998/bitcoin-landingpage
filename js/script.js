@@ -1,38 +1,72 @@
-var arrowLeft, arrowRight;
+var arrowLeftPlans, arrowRightPlans, arrowBackTable, arrowNextTable;
+var containerPlan, stylePlan, boxPlanSize, containerTable, boxTableSize;
 
 window.addEventListener("load", function() {
-    console.log("It is working!!");
-    var containerPlan = document.getElementById("plans-container");
+    // setting up the variables for the plan section.
+    containerPlan = document.getElementById("plans-container");
     var planBoxs = document.getElementsByClassName("plan-section__list__item");
-    arrowLeft = document.getElementById("arrow-left");
-    arrowRight = document.getElementById("arrow-right");
-    var newStyle = planBoxs[1].currentStyle || window.getComputedStyle(planBoxs[1]); // gettig the current styles of the elements.
+    arrowLeftPlans = document.getElementById("arrow-left");
+    arrowRightPlans = document.getElementById("arrow-right");
+    stylePlan = planBoxs[1].currentStyle || window.getComputedStyle(planBoxs[1]); // gettig the current styles of the elements.
+
+    boxPlanSize = planBoxs[1].clientWidth;
+    containerPlan.scrollLeft = boxPlanSize; // seting the scroll to the center.
+
+    // setting up the variables for the table section.
+    containerTable = document.getElementById("container-table");
+    var planBoxs = document.getElementsByClassName("table-section__border");
+    arrowBackTable = document.getElementById("arrow-table-back");
+    arrowNextTable = document.getElementById("arrow-table-next");
     
-    var boxSize = planBoxs[1].clientWidth;
-    containerPlan.scrollLeft = boxSize; // seting the scroll to the center.
+    boxTableSize = planBoxs[0].clientWidth;
+    arrowBackTable.style.display = "none";
 
-    arrowLeft.addEventListener("click", function() {
-        arrowRight.style.display = "inline-block";
 
-        containerPlan.scrollLeft -= boxSize;
-        var margins = parseInt(newStyle.marginLeft) + parseInt(newStyle.marginRight) + 1;
+    handlerArrowPlan();
+    handlerArrowTable();
+});
 
-        if(containerPlan.scrollLeft < (boxSize + margins)) { // having into acount the 31px of horizontal margin on each element.
-            arrowLeft.style.display = "none";
+
+function handlerArrowPlan() {
+    arrowLeftPlans.addEventListener("click", function() {
+        arrowRightPlans.style.display = "inline-block";
+
+        containerPlan.scrollLeft -= boxPlanSize;
+        var margins = parseInt(stylePlan.marginLeft) + parseInt(stylePlan.marginRight) + 1;
+
+        if(containerPlan.scrollLeft < (boxPlanSize + margins)) { // having into acount the 31px of horizontal margin on each element.
+            arrowLeftPlans.style.display = "none";
         }
         console.log("clicked left!!");
     });
 
-    arrowRight.addEventListener("click", function() {
-        arrowLeft.style.display = "inline-block";
+    arrowRightPlans.addEventListener("click", function() {
+        arrowLeftPlans.style.display = "inline-block";
 
-        containerPlan.scrollLeft += boxSize;
-        var margins = parseInt(newStyle.marginLeft) + parseInt(newStyle.marginRight) + 1;
+        containerPlan.scrollLeft += boxPlanSize;
+        var margins = parseInt(stylePlan.marginLeft) + parseInt(stylePlan.marginRight) + 1;
 
-        if(containerPlan.scrollLeft > (boxSize + margins)) {
-            arrowRight.style.display = "none";
+        if(containerPlan.scrollLeft > (boxPlanSize + margins)) {
+            arrowRightPlans.style.display = "none";
         }
         console.log("clicked right!!");
     });
-});
+}
 
+function handlerArrowTable() {
+    arrowBackTable.addEventListener("click", function() {
+        console.log("clicked back!!");
+        arrowNextTable.style.display = "inline-block";
+
+        containerTable.scrollLeft -= boxTableSize;
+        arrowBackTable.style.display = "none";
+    });
+
+    arrowNextTable.addEventListener("click", function() {
+        console.log("clicked next!!");
+        arrowBackTable.style.display = "inline-block";
+
+        containerTable.scrollLeft += boxTableSize;
+        arrowNextTable.style.display = "none";
+    });
+}
