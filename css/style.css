@@ -390,3 +390,145 @@ td {
     position: absolute;
     bottom: 35%;
 }
+
+@media (min-width: 375px) {
+    .first-table, .second-table {
+        margin: 0 3em;
+    }
+}
+
+@media (min-width: 425px) {
+    .hidden-container .right {
+        right: 40px;
+    }
+
+    .hidden-container .left {
+        left: 40px;
+    }
+}
+
+@media (min-width: 765px) {
+    .header-section__nav {
+        background-color: #000;
+        margin-bottom: 4em;
+    }
+
+    .header-section__main-text {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2em;
+    }
+
+    .header-section__text {
+        font-size: 2.2rem;
+        margin-bottom: 2em;
+        line-height: 2.5rem;
+    }
+
+    .header-section__button {
+        font-size: 1.8rem;
+        width: 285px;
+        height: 65px;
+        bottom: -30px;
+    }
+
+    .main-section {
+        padding-top: 8em;
+    }
+
+    .table-section__img {
+        width: 450px;
+        height: 450px;
+        margin-bottom: 8em;
+    }
+
+    .section__title {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 2em;
+    }
+
+    .section__text {
+        font-size: 2.2rem;
+        margin-bottom: 2em;
+        line-height: 2.5rem;
+    }
+
+    .table-section__wrapper {
+        width: 75%;
+    }
+
+    .wrapper-table-arrows {
+        display: none;
+    }
+
+    .first-table, .second-table {
+        margin: 0 .8em;
+    }
+
+    .table-section__second-tittle {
+        font-size: 2.5rem;
+    }
+
+    .table-section__border {
+        width: 240px;
+    }
+
+    .table-left {
+        font-size: 2rem;
+    }
+
+    .table-right {
+        font-size: 1.7rem;
+    }
+
+    .table-right .icon-table {
+        width: 15px;
+        height: 16px;
+    }
+
+    .table-section__date {
+        font-size: 1.4rem;
+        padding: 0.8em;
+        width: 215px;
+        height: 40px;
+    }
+
+    .feature-section {
+        padding-top: 8em;
+        padding-bottom: 6em;
+    }
+
+    .feature-section .patata-icon {
+        width: 54px;
+        height: 33px;
+        top: -15px;
+    }
+
+    .feature-section__item {
+        padding: 3em;
+    }
+
+    .feature-section__tittle {
+        font-size: 4rem;
+    }
+
+    .feature-section__text {
+        font-size: 2.2rem;
+        padding-top: 2.5em;
+        padding-bottom: 3em;
+    }
+
+    .feature-section__item__tittle {
+        font-size: 2.5rem;
+    }
+
+    .feature-section__item__text {
+        font-size: 1.8rem;
+    }
+
+    .feature-section__item .icon-feature {
+        width: 30px;
+        height: 30px;
+    }
+}
