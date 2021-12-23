@@ -244,21 +244,20 @@ td {
 }
 
 .image-section__wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.image-section__img {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 50vh;
+    background-image: url("../assets/imgs/bitcoinbaby.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .image-section__tittle {
     font-size: 2.4rem;
+    padding: 5em 2em;
     color: var(--white);
-    position: absolute;
-    left: calc(50% - 81.5px);
-    top: 60px;
 }
 
 .plan-section {
@@ -405,6 +404,11 @@ td {
     .hidden-container .left {
         left: 40px;
     }
+
+    .image-section__tittle {
+        font-size: 3.4rem;
+        padding: 3em 2em;
+    }
 }
 
 @media (min-width: 765px) {
@@ -530,5 +534,36 @@ td {
     .feature-section__item .icon-feature {
         width: 30px;
         height: 30px;
+    }
+
+    .image-section__wrapper {
+        background-image: url("../assets/imgs/bitcoinbabyx2.jpeg");
+    }
+
+    .image-section__tittle {
+        font-size: 4.5rem;
+        padding: 2em;
+    }
+
+    .plan-section {
+        padding-top: 8em;
+    }
+
+    .hidden-container {
+        visibility: hidden;
+    }
+
+    .plan-section__list {
+        padding-bottom: 8em;
+    }
+
+    .footer-section {
+        padding: 4em;
+    }
+
+    .footer-list li {
+        margin: 1em;
+        font-size: 1.7rem;
+        display: inline-block;
     }
 }
