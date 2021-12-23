@@ -1,0 +1,25 @@
+
+.first-table, .second-table {
+    margin: 0 3em;
+}
+
+@media (min-width: 425px) {
+    .hidden-container .right {
+        right: 40px;
+    }
+
+    .hidden-container .left {
+        left: 40px;
+    }
+
+    .image-section__tittle {
+        font-size: 3.4rem;
+        padding: 3em 2em;
+    }
+}
+
+@media (min-width: 550px) {
+    .hidden-container {
+        visibility: hidden;
+    }
+}
